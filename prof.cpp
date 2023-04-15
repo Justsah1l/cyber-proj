@@ -93,7 +93,7 @@ int main() {
     int cipherTextLen = encryptAES(plainText, strlen((char*)plainText), key, iv, cipherText);
     if (!cipherTextLen) return 1;
 
-    cout << "Encrypted Text: ";
+    cout << "Encrypted Text now: ";
     for (int i = 0; i < cipherTextLen; i++) {
         cout << hex << setw(2) << setfill('0') << (int)cipherText[i];
     }
